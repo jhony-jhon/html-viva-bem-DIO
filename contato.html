@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Clinica Viva Bem</title>
+    <style>
+      nav ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: blue;
+        color: white;
+      }
+      header {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-image: url("banner-fale-conosco.png");
+        background-size: cover;
+        background-position: center;
+        height: 220px;
+      }
+      .inline {
+        display: inline-block;
+        margin-top: 6px;
+        margin-right: 15px;
+        font-weight: normal;
+      }
+      nav ul a {
+        border: 2px solid whitesmoke;
+        border-radius: 180px;
+        background-color: rgba(0, 0, 255, 0.8);
+        color: white;
+        padding: 8px 20px;
+        margin: 5px;
+        display: inline-block;
+        text-decoration: none;
+      }
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #555;
+      }
+      main {
+        margin: 20px;
+      }
+      form {
+        margin: 20px 0;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input,
+      textarea {
+        padding: 6px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        width: auto;
+        margin-right: 6px;
+        margin-left: 0;
+        vertical-align: middle;
+      }
+      button {
+        margin-top: 10px;
+        padding: 8px 16px;
+      }
+      main {
+        color: white;
+        margin: 0;
+        padding-left: 20px;
+      }
+      fieldset {
+        border: 1px solid #fff;
+        border-radius: 8px;
+        padding: 12px;
+        margin-top: 10px;
+        background: rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Principal</a></li>
+        <li><a href="sobre.html">Sobre a Clínica</a></li>
+        <li><a href="horario.html">Horário de Atendimento</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Fale conosco</h2>
+      <p>Telefone: (11) 99999-9999 | WhatsApp: (11) 98888-8888</p>
+      <p>Endereço: Rua da Saúde, 123 - Centro, São Paulo - SP</p>
+      <iframe
+        src="https://www.google.com/maps?q=Rua+da+Saude,+123,+Sao+Paulo&output=embed"
+        width="70%"
+        height="200"
+        style="border: 0; margin-bottom: 20px"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <form>
+        <fieldset>
+          <legend>Formulário de Contato</legend>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" required />
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <span style="display: block; margin-top: 10px; font-weight: bold"
+            >Como conheceu a clínica?</span
+          >
+          <label
+            ><input type="radio" name="origem" value="internet" required />
+            Internet</label
+          >
+          <label
+            ><input type="radio" name="origem" value="indicacao" />
+            Indicação</label
+          >
+          <label
+            ><input type="radio" name="origem" value="outros" /> Outros</label
+          >
+
+          <label style="margin-top: 8px">
+            <input type="checkbox" name="novidades" value="sim" /> Quero receber
+            novidades por e-mail
+          </label>
+
+          <span style="font-size: 12px; color: #fff"
+            >Campos marcados com * são obrigatórios.</span
+          ><br />
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer style="color: white">
+      <p>&copy; 2025 Clinica Viva Bem. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinica Viva Bem</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: blue;
+        color: #333;
+      }
+      .wrapper {
+        display: flex;
+        min-height: 100vh;
+      }
+      .menu {
+        width: 220px;
+        background: #001a66;
+        min-height: 100vh;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        padding: 0;
+      }
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu ul li {
+        margin: 0;
+        padding: 0;
+      }
+      .menu ul li a {
+        display: block;
+        padding: 16px 20px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #003399;
+        background: none;
+        border-radius: 0;
+        transition: background 0.2s;
+      }
+      .menu ul li a:hover {
+        background: #003399;
+      }
+      .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .header {
+        background-image: url("viva-bem-header.png");
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header h1 {
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        padding: 10px 30px;
+        background-color: rgba(0, 0, 255, 0.8);
+        width: fit-content;
+        margin: 0 auto;
+        display: block;
+      }
+      .content {
+        flex: 1;
+        padding: 30px 40px 0 40px;
+      }
+      .content h2 {
+        color: whitesmoke;
+        margin: 10px 0 20px 0;
+        text-align: left;
+      }
+      .content p {
+        line-height: 1.6;
+        font-size: 18px;
+        color: white;
+        text-align: left;
+        margin: 10px 0 10px 40px;
+      }
+      .footer {
+        background: #001a66;
+        color: white;
+        text-align: center;
+        padding: 30px 0 10px 0;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Página Principal</a></li>
+          <li><a href="sobre.html">Sobre a Clínica</a></li>
+          <li><a href="horario.html">Horário de Atendimento</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="header">
+          <h1>Clinica Viva Bem 🌱</h1>
+        </div>
+        <div class="content">
+          <h2>Bem-vindo à Clínica Viva Bem!</h2>
+          <p>
+            Nossa clínica oferece atendimento humanizado e especializado para
+            cuidar da sua saúde e bem-estar. Conheça nossos serviços e equipe!
+          </p>
+          <p>
+            Navegue pelo nosso site para saber mais sobre nossos horários de
+            atendimento, equipe médica e como entrar em contato conosco.
+          </p>
+          <p>Estamos aqui para ajudar você a viver bem!</p>
+          <p>Sua saúde é nossa prioridade. Agende uma consulta hoje mesmo!</p>
+          <p>Sua jornada para uma vida mais saudável começa aqui.</p>
+          <p>Entre em contato conosco e agende sua consulta!</p>
+          <div style="text-align: center; margin: 30px 0">
+            <img
+              src="doctor.gif"
+              alt="Médico animado"
+              style="max-width: 220px; width: 100%; height: auto"
+            />
+          </div>
+        </div>
+        <div class="footer">
+          <p>&copy; 2023 Clinica Viva Bem. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
